@@ -9,7 +9,9 @@ from fastai import *
 from fastai.vision import *
 
 model_file_url = 'https://docs.google.com/uc?export=download&id=1FNg8wBfK0c7hHu5wbtNXqmxoheDPZy-9'
-model_file_name = 'model'classes = ['Oriole', 'Chickadee', 'Cardinal']path = Path(__file__).parent
+model_file_name = 'model'
+classes = ['Oriole', 'Chickadee', 'Cardinal']
+path = Path(__file__).parent
 
 app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
